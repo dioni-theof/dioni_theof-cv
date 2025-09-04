@@ -1,0 +1,132 @@
+% Dionisia Theofylaktou Professional CV - 2025
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[top=0.3cm, bottom=0.3cm, left=0.7cm, right=0.7cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{fontawesome}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+% Define colors
+\definecolor{primary}{HTML}{2c3e50}
+\definecolor{secondary}{HTML}{34495e}
+\definecolor{accent}{HTML}{3498db}
+
+% Configure hyperlinks
+\hypersetup{
+    colorlinks=true,
+    linkcolor=accent,
+    urlcolor=accent,
+    pdfborder={0 0 0}
+}
+
+% Configure sections with better styling
+\titleformat{\section}
+    {\large\bfseries\color{primary}}
+    {\thesection}{0em}{}
+    [\vspace{-0.4em}\textcolor{accent}{\titlerule[0.8pt]}\vspace{-0.1em}]
+\titlespacing{\section}{0pt}{2pt}{0pt}
+
+% Remove page numbers
+\pagenumbering{gobble}
+
+\begin{document}
+
+% Header with improved styling
+\begin{center}
+    {\Huge\bfseries\color{primary} Dionisia Theofylaktou}\\[0.2em]
+    {\large\color{secondary} Computer Science Graduate}\\[0.3em]
+    \textcolor{secondary}{
+        Athens, Greece $\cdot$
+        \href{tel:+306979534975}{\faPhone\ +30 697 953 4975} $\cdot$
+        \href{mailto:dtheofylaktou@gmail.com}{\faEnvelope\ dtheofylaktou@gmail.com} $\cdot$
+        \href{https://www.linkedin.com/in/dionisia-theofylaktou/}{\faLinkedin\ https://www.linkedin.com/in/dionisia-theofylaktou} $\cdot$
+        \href{https://github.com/dioni-theof}{\faGithub\ https://github.com/dioni-theof}
+    }
+\end{center}
+
+\vspace{-0.1em}
+
+\section*{Professional Summary}
+\textit{Computer science graduate transitioning from education to software engineering. M.Sc. in Advanced Software Development Technologies with hands-on experience in Java, Spring Boot, and backend development through academic projects. Built computational platforms and database systems, ready to apply technical skills in a professional software development environment.}
+
+\section*{Technical Skills \& Languages}
+\noindent
+\begin{minipage}[t]{0.49\textwidth}
+\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt, parsep=1pt, partopsep=0pt]
+    \item \textbf{\textcolor{primary}{Core Technologies:}} Java, Spring~Boot, Python, Hibernate, JPA
+    \item \textbf{\textcolor{primary}{Databases \& Cloud:}} MySQL, PostgreSQL, NoSQL, Cloud~Firestore, Firebase
+    \item \textbf{\textcolor{primary}{Languages:}} Greek~(Native), English~(Professional)
+\end{itemize}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.49\textwidth}
+\begin{itemize}[leftmargin=*, noitemsep, topsep=0pt, parsep=1pt, partopsep=0pt]
+    \item \textbf{\textcolor{primary}{Development Tools:}} Maven, Docker, Git, UML, IntelliJ~IDEA
+    \item \textbf{\textcolor{primary}{Architecture:}} RESTful~APIs, Microservices, Design~Patterns, Blockchain
+\end{itemize}
+\end{minipage}
+
+\section*{Education}
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{\textcolor{primary}{2019 - 2022}} & \textbf{M.Sc. Advanced Informatics and Computing Systems} \textbar\space \textbf{University of Piraeus} \\
+& \textit{Grade: \textbf{\textcolor{accent}{9.03/10}} \textbullet\space Specialization: Advanced Software Development Technologies} \\
+& \textit{Key Courses: Advanced Java, Pattern Recognition \& ML, Cloud Computing, Secure Programming} \\[0.1em]
+
+\textbf{\textcolor{primary}{2008 - 2019}} & \textbf{Diploma Applied Mathematical and Physical Sciences} \textbar\space \textbf{NTUA} \\
+& \textit{Grade: 6.5/10 \textbullet\space Major: Engineering Physics \textbullet\space Key Courses: Java Programming, MATLAB, OOP}
+\end{tabularx}
+
+\section*{Research Projects \& Publications}
+
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{\textcolor{primary}{2018 - 2019}} & \textbf{Computational Application for Natural Products Database} \textbar\space \textit{NTUA Thesis} \\
+& Java-based computational platform analyzing 562 research articles, 87 organisms, 19 cancer types, and 105 target genes. Designed NaturaProDB database using Cloud Firestore (NoSQL) with Firebase hosting and data processing algorithms. \href{https://doi.org/10.1155/2021/9993518}{\textcolor{accent}{https://doi.org/10.1155/2021/9993518}} \\[0.1em]
+
+\textbf{\textcolor{primary}{2019 - 2022}} & \textbf{Personalized ID using European Blockchain Infrastructure} \textbar\space \textit{University of Piraeus Thesis} \\
+& Designed blockchain-based identity management system using European Blockchain Services Infrastructure. Developed TrustVault data wallet with Self-Sovereign Identity principles and verifiable credentials for secure digital identity management. \href{https://dione.lib.unipi.gr/xmlui/handle/unipi/14917}{\textcolor{accent}{https://dione.lib.unipi.gr/xmlui/handle/unipi/14917}} \\
+\end{tabularx}
+
+\section*{Personal Projects}
+
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{\textcolor{primary}{2024}} & \textbf{Course Management System} \textbar\space \textit{Spring Boot \& PostgreSQL} \\
+& \begin{tabular}{@{}p{\linewidth}@{}}
+\textbullet\ Comprehensive RESTful API built with Java 21, Spring Boot 3.4.5, and Spring Data JPA for educational course operations \\
+\textbullet\ Features complete CRUD operations for courses and students, course enrollment API, paginated endpoints, and SpringDoc OpenAPI documentation \\
+\textbullet\ Includes Docker containerization and PostgreSQL integration \\
+\textbullet\ \textit{GitHub:} \href{https://github.com/dioni-theof/course-management}{\textcolor{accent}{github.com/dioni-theof/course-management}}
+\end{tabular}
+\\[0.1em]
+
+\textbf{\textcolor{primary}{2024}} & \textbf{Reservation System} \textbar\space \textit{Spring Boot \& PostgreSQL} \\
+& \begin{tabular}{@{}p{\linewidth}@{}}
+\textbullet\ Advanced booking management system with Java 21, Spring Boot 3.4.5, implementing resource availability tracking and scheduling \\
+\textbullet\ Provides RESTful APIs for reservation CRUD operations, resource capacity management, user booking history, and time-based availability queries \\
+\textbullet\ Features Docker deployment and Swagger UI documentation \\
+\textbullet\ \textit{GitHub:} \href{https://github.com/dioni-theof/reservation-system}{\textcolor{accent}{github.com/dioni-theof/reservation-system}}
+\end{tabular}
+\\
+\end{tabularx}
+
+\section*{Work Experience}
+
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{\textcolor{primary}{2024 - 2025}} & \textbf{Computer Science \& Networks Instructor} \textbar\space \textit{Karakaxis (EPAL), Greece} \\
+& Taught Python programming and Computer Networks, achieving exceptional results with 4 students scoring 90\%+ in national exams \\[0.03em]
+
+\textbf{\textcolor{primary}{2023 - 2024}} & \textbf{Computer Science \& Physics Teacher} \textbar\space \textit{Diakrotima, Greece} \\
+& Delivered algorithms and computational thinking curriculum while developing problem-solving methodologies and debugging techniques \\[0.03em]
+
+\textbf{\textcolor{primary}{2021 - 2023}} & \textbf{Academic Lead – Science Subjects} \textbar\space \textit{Mikro Panepistimio, Greece} \\
+& Led curriculum development and project management for science education programs, implementing data-driven progress tracking systems \\[0.03em]
+
+\textbf{\textcolor{primary}{2019 - 2020}} & \textbf{STEM Instructor} \textbar\space \textit{Mouseio Peiramaton, Greece} \\
+& Designed programming activities with LEGO® Education kits while mentoring students in logical thinking and problem-solving \\
+\end{tabularx}
+
+\end{document}
