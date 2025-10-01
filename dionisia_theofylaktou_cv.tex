@@ -1,7 +1,7 @@
 % Dionysia Theofylaktou Professional CV - 2025
-\documentclass[a4paper,11pt]{article}
+\documentclass[a4paper,10.5pt]{article}
 
-\usepackage[a4paper,top=0.3cm, bottom=0.3cm, left=0.6cm, right=1.0cm]{geometry}
+\usepackage[a4paper,top=0.5cm, bottom=0.5cm, left=1.0cm, right=1.0cm]{geometry}
 \usepackage{enumitem}
 \usepackage{titlesec}
 \usepackage{hyperref}
@@ -11,6 +11,7 @@
 \usepackage{multicol}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
+\usepackage{ragged2e}
 
 % Define colors
 \definecolor{primary}{HTML}{2c3e50}
@@ -27,10 +28,13 @@
 
 % Configure sections with better styling
 \titleformat{\section}
-    {\large\bfseries\color{primary}}
+    {\Large\bfseries\color{primary}}
     {\thesection}{0em}{}
-    [\vspace{-0.4em}\textcolor{accent}{\titlerule[0.8pt]}\vspace{0.1em}]
-\titlespacing{\section}{0pt}{4pt}{2pt}
+    [\vspace{-0.5em}\textcolor{accent}{\titlerule[0.8pt]}\vspace{-0.1em}]
+\titlespacing{\section}{0pt}{2pt}{1pt}
+
+% Define new column type for better text spacing
+\newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
 
 % Remove page numbers
 \pagenumbering{gobble}
@@ -39,21 +43,21 @@
 
 % Header with improved styling
 \begin{center}
-    {\Huge\bfseries\color{primary} Dionysia Theofylaktou}\\[0.2em]
-    {\large\color{secondary} Java Developer | Backend \& Mobile Development}\\[0.3em]
+    {\Huge\bfseries\color{primary} Dionysia Theofylaktou}\\[0.15em]
+    {\large\color{secondary} Java Developer | Backend \& Mobile Development}\\[0.25em]
     \textcolor{secondary}{
         Athens, Greece $\cdot$
         \href{tel:+306979534975}{\faPhone~+30 697 953 4975} $\cdot$
         \href{mailto:dtheofylaktou@gmail.com}{\faEnvelope~dtheofylaktou@gmail.com} $\cdot$
-        \href{https://www.linkedin.com/in/dionysia-theofylaktou//}{\faLinkedin~https://www.linkedin.com/in/dionysia-theofylaktou/} $\cdot$
-        \href{https://github.com/dioni-theof}{\faGithub~https://github.com/dioni-theof}
+        \href{https://www.linkedin.com/in/dionysia-theofylaktou/}{\faLinkedin~linkedin.com/in/dionysia-theofylaktou} $\cdot$
+        \href{https://github.com/dioni-theof}{\faGithub~github.com/dioni-theof}
     }
 \end{center}
 
-\vspace{0.2em}
+\vspace{0.15em}
 
 \section*{Professional Summary}
-\textit{M.Sc. Advanced Informatics graduate transitioning from education to software development, with hands-on experience in Java, Spring Boot, and backend systems through academic research and recent project development.}
+\textit{Computer Science graduate transitioning from education to software engineering. Holds an M.Sc. in Advanced Informatics and Computing Systems with hands-on experience in Java, Spring Boot, and Android/mobile development gained through academic studies and recent projects.}
 
 \vspace{0.2em}
 
@@ -61,24 +65,25 @@
 \noindent
 \begin{minipage}[t]{0.49\textwidth}
 \begin{itemize}[leftmargin=*, noitemsep, topsep=0pt, parsep=1pt, partopsep=0pt]
-    \item \textbf{\textcolor{primary}{Core Technologies:}} Android~SDK, Spring~Boot, Java , Python, Hibernate, JPA
-    \item \textbf{\textcolor{primary}{Databases \& Cloud:}} MySQL, PostgreSQL, NoSQL, Cloud~Firestore, Firebase
-    \item \textbf{\textcolor{primary}{Languages:}} Greek~(Native), English~(Professional)
+    \item \textbf{Core Technologies:} Android~SDK, Spring~Boot, Java , Python, Hibernate, JPA
+    \item \textbf{{Databases \& Cloud:}} MySQL, PostgreSQL, NoSQL, Cloud~Firestore, Firebase
+    \item \textbf{{Languages:}} Greek~(Native), English~(Professional)
 \end{itemize}
 \end{minipage}\hfill
 \begin{minipage}[t]{0.49\textwidth}
 \begin{itemize}[leftmargin=*, noitemsep, topsep=0pt, parsep=1pt, partopsep=0pt]
-    \item \textbf{\textcolor{primary}{Development Tools:}} Maven, Docker, Git, UML, IntelliJ~IDEA
-    \item \textbf{\textcolor{primary}{Architecture:}} RESTful~APIs, Microservices, Design~Patterns
+    \item \textbf{{Networking:}} TCP/IP, UDP, DNS, DHCP
+    \item \textbf{{Development Tools:}} Maven, Docker, Git, UML, IntelliJ
+    \item \textbf{{Architecture:}} RESTful~APIs, Microservices, Design~Patterns
 \end{itemize}
 \end{minipage}
 
 \vspace{0.2em}
 
 \section*{Education}
-\begin{tabularx}{\textwidth}{@{}l X@{}}
+\begin{tabularx}{\textwidth}{@{}l Y@{}}
 \textbf{\textcolor{primary}{2019 - 2022}} & \textbf{M.Sc. Advanced Informatics and Computing Systems} \textbar\space \textbf{University of Piraeus} \\
-& \textit{Grade: \textbf{\textcolor{accent}{9.03/10}} \textbullet\space Specialization: Advanced Software Development Technologies} \\[0.1em]
+& \textit{Grade: \textbf{\textcolor{accent}{9.03/10}} \textbullet\space Specialization: Advanced Software Development Technologies} \\[0.15em]
 
 \textbf{\textcolor{primary}{2008 - 2019}} & \textbf{Diploma Applied Mathematical and Physical Sciences} \textbar\space \textbf{NTUA} \\
 & \textit{Grade: 6.5/10 \textbullet\space Major: Engineering Physics}
@@ -88,45 +93,45 @@
 
 \section*{Research Projects \& Publications}
 
-\begin{tabularx}{\textwidth}{@{}l X@{}}
+\begin{tabularx}{\textwidth}{@{}l Y@{}}
 \textbf{\textcolor{primary}{2018 - 2019}} & \textbf{Computational Application for Natural Products Database} \textbar\space \textit{NTUA Thesis} \\
-& Computational platform analyzing 562 research articles, 87 organisms, and 105 target genes. NoSQL database with Firebase hosting. \href{https://doi.org/10.1155/2021/9993518}{\textcolor{accent}{https://doi.org/10.1155/2021/9993518}} \\[0.1em]
+& Platform analyzing 562~research articles, 87~organisms, 105~target genes. NoSQL/Firebase. \href{https://doi.org/10.1155/2021/9993518}{\textcolor{accent}{https://doi.org/10.1155/2021/9993518}} \\[0.15em]
 
 \textbf{\textcolor{primary}{2021 - 2022}} & \textbf{Personalized ID using European Blockchain Infrastructure} \textbar\space \textit{University of Piraeus Thesis} \\
-& Blockchain-based identity management system with Self-Sovereign Identity principles and verifiable credentials. \href{https://dione.lib.unipi.gr/xmlui/handle/unipi/14917}{\textcolor{accent}{https://dione.lib.unipi.gr/xmlui/handle/unipi/14917}} \\
+& Blockchain identity management with Self-Sovereign Identity and verifiable credentials. \href{https://dione.lib.unipi.gr/xmlui/handle/unipi/14917}{\textcolor{accent}{https://dione.lib.unipi.gr/xmlui/handle/unipi/14917}} \\
 \end{tabularx}
 
 \vspace{0.2em}
 
 \section*{Personal Projects}
 
-\begin{tabularx}{\textwidth}{@{}l X@{}}
+\begin{tabularx}{\textwidth}{@{}l Y@{}}
 \textbf{\textcolor{primary}{2025}} & \textbf{Course Management System} \textbar\space \textit{Spring Boot \& PostgreSQL} \\
-& RESTful API with Java 21, Spring Boot 3.4.5, complete CRUD operations, course enrollment, pagination, OpenAPI docs, Docker deployment. \href{https://github.com/dioni-theof/course-management}{\textcolor{accent}{https://github.com/dioni-theof/course-management}} \\[0.1em]
+& RESTful API with Java 21, Spring Boot 3.4.5, CRUD operations, course enrollment, pagination, OpenAPI. \href{https://github.com/dioni-theof/course-management}{\textcolor{accent}{github.com/dioni-theof/course-management}} \\[0.15em]
 
 \textbf{\textcolor{primary}{2025}} & \textbf{Reservation System} \textbar\space \textit{Spring Boot \& PostgreSQL} \\
-& Booking management system with Java 21, resource availability tracking, scheduling APIs, capacity management, Swagger UI. \href{https://github.com/dioni-theof/reservation-system}{\textcolor{accent}{https://github.com/dioni-theof/reservation-system}} \\[0.1em]
+& Booking management with Java 21, resource tracking, scheduling APIs, capacity management. \href{https://github.com/dioni-theof/reservation-system}{\textcolor{accent}{github.com/dioni-theof/reservation-system}} \\[0.15em]
 
 \textbf{\textcolor{primary}{2025}} & \textbf{SmartAlert Emergency Mobile App} \textbar\space \textit{Android \& Firebase} \\
-& Emergency alert Android app with fire/fall detection, automatic SOS, multilingual support (EN/GR/ES), Java 11, Firebase backend. \href{https://github.com/dioni-theof/smart-alert}{\textcolor{accent}{https://github.com/dioni-theof/smart-alert}} \\
+& Emergency alert app with fire/fall detection, automatic SOS, multilingual support (EN/GR/ES), Java 11. \href{https://github.com/dioni-theof/smart-alert}{\textcolor{accent}{github.com/dioni-theof/smart-alert}} \\
 \end{tabularx}
 
 \vspace{0.2em}
 
 \section*{Work Experience}
 
-\begin{tabularx}{\textwidth}{@{}l X@{}}
+\begin{tabularx}{\textwidth}{@{}l Y@{}}
 \textbf{\textcolor{primary}{2024 - 2025}} & \textbf{Computer Science \& Networks Instructor} \textbar\space \textit{Karakaxis (EPAL), Greece} \\
-& Taught Python programming and Computer Networks, achieving exceptional results with 4 students scoring 90\%+ in national exams \\[0.03em]
+& Taught Python programming and Computer Networks (TCP/IP, UDP, DNS, DHCP, Routing). 4 students scored 90\%+ in national exams. \\[0.12em]
 
 \textbf{\textcolor{primary}{2023 - 2024}} & \textbf{Computer Science \& Physics Teacher} \textbar\space \textit{Diakrotima, Greece} \\
-& Taught the algorithms and pseudocode curriculum to final-year high school students, developed structured lesson plans for complex technical concepts, and supported exam preparation for the national university entrance exams with interactive teaching methods. \\[0.03em]
+& Delivered algorithms and pseudocode curriculum to final-year students. Developed lesson plans and supported national exam preparation. \\[0.12em]
 
 \textbf{\textcolor{primary}{2021 - 2023}} & \textbf{Academic Lead – Science Subjects} \textbar\space \textit{Mikro Panepistimio, Greece} \\
-& Led curriculum development and project management, implemented data-driven progress tracking systems, managed personalized learning plans across multiple academic levels with stakeholder collaboration \\[0.03em]
+& Led curriculum development, implemented data-driven progress tracking, managed personalized learning plans across multiple levels. \\[0.12em]
 
 \textbf{\textcolor{primary}{2019 - 2020}} & \textbf{STEM Instructor} \textbar\space \textit{Mouseio Peiramaton, Greece} \\
-& Designed hands-on programming activities with LEGO® Education kits, taught mechanics and electronics principles, mentored students in logical thinking and project-based problem-solving \\
+& Designed hands-on programming activities with LEGO® Education kits. Taught mechanics, electronics, and problem-solving principles. \\
 \end{tabularx}
 
 \end{document}
